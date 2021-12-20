@@ -57,8 +57,8 @@ public class ThSubdistrict implements Serializable {
     private BigDecimal long1;
     @Column(name = "ZIPCODE")
     private Integer zipcode;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "subDistrictId", fetch = FetchType.LAZY)
-    private List<Address> addressList;
+    //@OneToMany(cascade = CascadeType.ALL, mappedBy = "subDistrictId", fetch = FetchType.LAZY)
+    //private List<Address> addressList;
 
     public ThSubdistrict() {
     }
@@ -123,14 +123,14 @@ public class ThSubdistrict implements Serializable {
         this.zipcode = zipcode;
     }
 
-    @XmlTransient
-    public List<Address> getAddressList() {
-        return addressList;
-    }
+    //@XmlTransient
+    //public List<Address> getAddressList() {
+       // return addressList;
+   // }
 
-    public void setAddressList(List<Address> addressList) {
-        this.addressList = addressList;
-    }
+    //public void setAddressList(List<Address> addressList) {
+       // this.addressList = addressList;
+    //}
 
     @Override
     public int hashCode() {

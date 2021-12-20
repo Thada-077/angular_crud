@@ -50,9 +50,9 @@ public class Address implements Serializable {
     @JoinColumn(name = "ID", referencedColumnName = "ID", nullable = false, insertable = false, updatable = false)
     @OneToOne(optional = false, fetch = FetchType.LAZY)
     private ThProvince thProvince;
-    @JoinColumn(name = "SUB_DISTRICT_ID", referencedColumnName = "ID", nullable = false)
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    private ThSubdistrict subDistrictId;
+    //@JoinColumn(name = "SUB_DISTRICT_ID", referencedColumnName = "ID", nullable = false)
+   // @ManyToOne(optional = false, fetch = FetchType.LAZY)
+   // private ThSubdistrict subDistrictId;
 
     public Address() {
     }
@@ -107,13 +107,13 @@ public class Address implements Serializable {
         this.thProvince = thProvince;
     }
 
-    public ThSubdistrict getSubDistrictId() {
-        return subDistrictId;
-    }
+    //public ThSubdistrict getSubDistrictId() {
+        //return subDistrictId;
+   // }
 
-    public void setSubDistrictId(ThSubdistrict subDistrictId) {
-        this.subDistrictId = subDistrictId;
-    }
+    //public void setSubDistrictId(ThSubdistrict subDistrictId) {
+        //this.subDistrictId = subDistrictId;
+    //}
 
     @Override
     public int hashCode() {

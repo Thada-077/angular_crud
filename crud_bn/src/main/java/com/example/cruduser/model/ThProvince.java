@@ -41,8 +41,8 @@ public class ThProvince implements Serializable {
     private String nameTh;
     @Column(name = "NAME_EN", length = 120)
     private String nameEn;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "thProvince", fetch = FetchType.LAZY)
-    private Address address;
+    //@OneToOne(cascade = CascadeType.ALL, mappedBy = "thProvince", fetch = FetchType.LAZY)
+    //private Address address;
 
     public ThProvince() {
     }
@@ -75,13 +75,13 @@ public class ThProvince implements Serializable {
         this.nameEn = nameEn;
     }
 
-    public Address getAddress() {
-        return address;
-    }
+   // public Address getAddress() {
+       // return address;
+    //}
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
+   // public void setAddress(Address address) {
+       // this.address = address;
+  //  }
 
     @Override
     public int hashCode() {
